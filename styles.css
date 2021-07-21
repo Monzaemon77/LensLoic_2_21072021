@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Raleway' ;
+    src: url('src/fonts/Raleway-VariableFont_wght.ttf');
+}
+
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+#header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header ul
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+#header ul li a
+{
+    margin-left: 20px;
+    display: block;
+}
+
+#filter
+{
+    display: flex;
+}
+
+#footer
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#result_popular
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul
+{
+    list-style: none;
+}
