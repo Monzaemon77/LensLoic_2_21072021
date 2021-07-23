@@ -28,6 +28,12 @@
     display: block;
 }
 
+#search_bar_button
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
 #filter
 {
     display: flex;
