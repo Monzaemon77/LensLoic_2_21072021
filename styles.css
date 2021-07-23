@@ -8,6 +8,38 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.fa-star
+{
+    color: #0065FC;
+}
+
+
+.fa-money-bill-wave
+{
+    color: #0065FC;
+}
+
+.fa-child
+{
+    color: #0065FC;
+}
+
+.fa-heart
+{
+    color: #0065FC;
+}
+
+.fa-dog
+{
+    color: #0065FC;
+}
+
+.fa-info-circle
+{
+    background-color: #0065FC;
+    color: white;
+}
+
 #header
 {
     display: flex;
@@ -39,6 +71,28 @@
     display: flex;
 }
 
+#result:nth-child(1)
+{
+    background-color: #f2f2f2;
+    border: 3px solid;
+    border-radius: 10px;
+    flex: 2;
+}
+
+#popular
+{
+    background-color: #f2f2f2;
+    border: 3px solid;
+    border-radius: 15px;
+}
+
+#title_popular
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #footer
 {
     display: flex;
@@ -48,10 +102,91 @@
 #result_popular
 {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 ul
 {
     list-style: none;
+}
+
+.map_marker
+{
+    border: 1px solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+#block1_1
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block1_2
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block1_3
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block1_4
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block1_5
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block1_6
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block2_1
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block2_2
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+}
+
+#block2_3
+{
+    background-color: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
 }
