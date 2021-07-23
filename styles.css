@@ -34,10 +34,21 @@
     color: #0065FC;
 }
 
-.fa-info-circle
+.icon-background2 
 {
-    background-color: #0065FC;
-    color: white;
+    color: #f2f2f2;
+}
+
+.fa-info 
+{
+  color: #0065fc;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 #header
@@ -71,12 +82,17 @@
     display: flex;
 }
 
+#result_popular
+{
+    max-height: 50%;
+}
+
 #result:nth-child(1)
 {
     background-color: #f2f2f2;
     border: 3px solid;
     border-radius: 10px;
-    flex: 2;
+    flex: 1;
 }
 
 #popular
@@ -84,6 +100,7 @@
     background-color: #f2f2f2;
     border: 3px solid;
     border-radius: 15px;
+    overflow: auto;
 }
 
 #title_popular
@@ -119,16 +136,44 @@ ul
     background-color: #f2f2f2;
 }
 
+#result
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+#result_block
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 50%;
+}
+
 #block1_1
 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16%;
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
     padding: 3px 3px 3px 3px;
 }
 
+.image_block1
+{
+    max-width: 100%;
+    max-height: 70%;
+}
+
 #block1_2
 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16%;
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
@@ -137,6 +182,10 @@ ul
 
 #block1_3
 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16%;
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
@@ -145,6 +194,10 @@ ul
 
 #block1_4
 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16%;
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
@@ -153,6 +206,10 @@ ul
 
 #block1_5
 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16%;
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
@@ -161,6 +218,10 @@ ul
 
 #block1_6
 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16%;
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
