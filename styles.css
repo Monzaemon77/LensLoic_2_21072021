@@ -13,7 +13,6 @@
     color: #0065FC;
 }
 
-
 .fa-money-bill-wave
 {
     color: #0065FC;
@@ -34,12 +33,12 @@
     color: #0065FC;
 }
 
-.icon-background2 
+.icon-background2
 {
     color: white;
 }
 
-.fa-info 
+.fa-info
 {
     border: 1px solid;
     width: 30px;
@@ -87,34 +86,78 @@ header
     display: block;
 }
 
-.intro h1
+.intro
 {
-    font-size: 16px;
+    height: 25%;
 }
 
-.intro p
+#search_filter
 {
-    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 245px;
 }
 
 #search_bar_full
 {
+    display: flex;
     max-width: 30%;
+    max-height: 25%;
 }
 
 #search_bar_button
 {
     display: flex;
     justify-content: flex-start;
+    min-height: 61px;
+}
+
+.map_marker
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f2f2f2;
+    min-width: 15%;
 }
 
 .search_button
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #0065FC;
-    color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-color: #f2f2f2;
+}
+
+.search_button_int
+{
+    background: none;
+    border: none;
+    color: white;
+    min-height: 100%;
+}
+
+.search_bar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    border-color: #f2f2f2;
+}
+
+.search_bar_int
+{
+    background: none;
+    border: none;
+    min-height: 100%;
 }
 
 #filter
@@ -122,6 +165,7 @@ header
     display: flex;
     justify-content: space-between;
     max-width: 71%;
+    max-height: 25%;
 }
 
 .button
@@ -134,7 +178,7 @@ header
 
 #info
 {
-    max-height: 50px;
+    max-height: 25%;
 }
 
 #result_popular
@@ -191,14 +235,6 @@ header
 ul
 {
     list-style: none;
-}
-
-.map_marker
-{
-    border: 1px solid;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: #f2f2f2;
 }
 
 #result
