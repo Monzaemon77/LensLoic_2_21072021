@@ -109,7 +109,7 @@ img
 #header ul a:hover
 {
     color: #0065FC;
-    border-top: 3px solid;
+    border-top: 2px solid;
 }
 
 .sign_up
@@ -138,17 +138,12 @@ img
     max-height: 25%;
 }
 
-#search_bar_full
-{
-    max-width: 30%;
-    max-height: 25%;
-}
-
 #search_bar_button
 {
     display: flex;
     justify-content: flex-start;
-    min-height: 61px;
+    max-width: 24%;
+    max-height: 25%;
 }
 
 .map_marker
@@ -161,7 +156,7 @@ img
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: #f2f2f2;
-    min-width: 10%;
+    width: 10%;
 }
 
 .search_button
@@ -173,7 +168,7 @@ img
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-color: #f2f2f2;
-    min-width: 30%;
+    width: 30%;
 }
 
 .search_button_int
@@ -181,7 +176,6 @@ img
     background: none;
     border: none;
     color: white;
-    min-height: 100%;
 }
 
 .search_bar
@@ -191,14 +185,12 @@ img
     justify-content: center;
     border: 1px solid;
     border-color: #f2f2f2;
-    min-width: 40%;
 }
 
 .search_bar_int
 {
     background: none;
     border: none;
-    min-height: 100%;
 }
 
 #filter
@@ -224,18 +216,23 @@ img
 
 #result_popular
 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     max-height: 595px;
     overflow: hidden;
 }
 
-#result:nth-child(1)
+#result
 {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: nowrap;
     background-color: #f2f2f2;
     border: 3px solid;
     border-radius: 10px;
-    flex: 1;
+    max-width: 70%;
     max-height: 595px;
 }
 
@@ -258,27 +255,6 @@ img
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#footer
-{
-    display: flex;
-    justify-content: flex-start;
-}
-
-#result_popular
-{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-#result
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 70%;
 }
 
 #result_block
