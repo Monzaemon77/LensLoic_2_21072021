@@ -14,6 +14,16 @@ a
     color: black;
 }
 
+h1
+{
+    margin: 0px;
+}
+
+p
+{
+    margin: 0px;
+}
+
 ul
 {
     list-style: none;
@@ -112,17 +122,20 @@ img
     font-weight: bold;
 }
 
-.intro
-{
-    height: 25%;
-}
-
 #search_filter
 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 245px;
+}
+
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 25%;
 }
 
 #search_bar_full
