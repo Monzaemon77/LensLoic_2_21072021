@@ -135,62 +135,39 @@ img
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    max-height: 25%;
 }
 
-#search_bar_button
+.search_bar_full
 {
     display: flex;
-    justify-content: flex-start;
-    max-width: 24%;
-    max-height: 25%;
+    width: 28rem;
 }
 
-.map_marker
+.fa-map-marker-alt
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
+    background-color: #f2f2f2;
+    padding: 1rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: #f2f2f2;
-    width: 10%;
 }
 
-.search_button
+.search_bar_int 
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #0065FC;
+    width: 15rem;
+    padding: 1rem;
+    border: 1px #f2f2f2 solid;
+}
+
+.button_search
+{
+    background-color: #0065fc;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    width: 10rem;
+    height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-color: #f2f2f2;
-    width: 30%;
-}
-
-.search_button_int
-{
-    background: none;
-    border: none;
-    color: white;
-}
-
-.search_bar
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid;
-    border-color: #f2f2f2;
-}
-
-.search_bar_int
-{
-    background: none;
-    border: none;
 }
 
 #filter
