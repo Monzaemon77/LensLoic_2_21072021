@@ -3,39 +3,38 @@
     src: url('src/fonts/Raleway-VariableFont_wght.ttf');
 }
 
-*
-{
+* {
     font-family: 'Raleway', sans-serif;
 }
 
-a
-{
+body {
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+}
+
+a {
     text-decoration: none;
     color: black;
 }
 
-h1
-{
+h1 {
     margin: 0px;
 }
 
-p
-{
+p {
     margin: 0px;
 }
 
-ul
-{
+ul {
     list-style: none;
 }
 
-.fa-star
-{
+.fa-star {
     color: #0065FC;
 }
 
-.fa-money-bill-wave
-{
+.fa-money-bill-wave {
     color: #0065FC;
     background-color: #DEEBFF;
     text-align: center;
@@ -46,8 +45,7 @@ ul
     left: 2rem;
 }
 
-.fa-child
-{
+.fa-child {
     color: #0065FC;
     background-color: #DEEBFF;
     text-align: center;
@@ -58,8 +56,7 @@ ul
     left: 2rem;
 }
 
-.fa-heart
-{
+.fa-heart {
     color: #0065FC;
     background-color: #DEEBFF;
     text-align: center;
@@ -70,8 +67,7 @@ ul
     left: 2rem;
 }
 
-.fa-dog
-{
+.fa-dog {
     color: #0065FC;
     background-color: #DEEBFF;
     text-align: center;
@@ -82,13 +78,11 @@ ul
     left: 2rem;
 }
 
-.icon-background2
-{
+.icon-background2 {
     color: white;
 }
 
-.fa-info
-{
+.fa-info {
     border: 1px solid;
     width: 30px;
     height: 30px;
@@ -97,32 +91,31 @@ ul
     color: #0065fc;
 }
 
-img
-{
+img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.bold
-{
+.bold {
     font-weight: bold;
 }
 
-#header
-{
+
+
+/* En-tete */
+
+#header {
     display: flex;
     justify-content: space-between;
 }
 
-.logo
-{
+.logo {
     display: flex;
     width: 25%;
 }
 
-#header ul
-{
+#header ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -131,22 +124,19 @@ img
     width: 30%;
 }
 
-#header ul a
-{
+#header ul a {
     display: flex;
     justify-content: center;
     min-width: 30%;
     padding: 12px;
 }
 
-#header ul a:hover
-{
+#header ul a:hover {
     color: #0065FC;
     border-top: 2px solid;
 }
 
-.sign_up
-{
+.sign_up {
     display: flex;
     justify-content: center;
     padding: 11px;
@@ -155,51 +145,48 @@ img
     font-weight: bold;
 }
 
-#search_filter
-{
+
+
+/* Section Intro recherche et filtres */
+
+#search_filter {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 245px;
+    height: 15em;
 }
 
-.intro
-{
+.intro {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-.search_bar_full
-{
+.search_bar_full {
     display: flex;
     width: 28rem;
 }
 
-.fa-map-marker-alt
-{
+.fa-map-marker-alt {
     background-color: #f2f2f2;
     padding: 1rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.search_bar_int 
-{
+.search_bar_int  {
     width: 15rem;
     padding: 1rem;
     border: 1px #f2f2f2 solid;
     font-weight: bold;
 }
 
-::placeholder 
-{
+::placeholder {
     color: black;
     font-size: 1.2rem;
 }
 
-.button_search
-{
+.button_search {
     background-color: #0065fc;
     color: white;
     font-size: 1.2rem;
@@ -210,33 +197,28 @@ img
     border-bottom-right-radius: 10px;
 }
 
-#filter
-{
+#filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 85rem;
+    max-width: 60rem;
 }
 
-.bold_filter
-{
+.bold_filter {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.filtre_full
-{
+.filtre_full {
     display: flex;
-    
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-.button
-{
+.button {
     background-color: white;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     padding-left: 3rem;
@@ -247,123 +229,161 @@ img
     border-width: 1px;
 }
 
-.button:hover
-{
+.button:hover {
     background-color: #DEEBFF;
 }
 
-.info
-{
+.info {
     max-height: 25%;
 }
 
-#result_popular
-{
+
+
+/* Section resultat et populaire */
+
+#result_popular {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    max-height: 595px;
+    max-height: 37em;
     overflow: hidden;
 }
 
-#result
-{
+#result {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: #f2f2f2;
-    border: 3px solid;
-    border-radius: 10px;
-    max-width: 70%;
-    max-height: 595px;
+    padding: 2em;
+    border-radius: 1.5em;
+    max-width: 54em;
 }
 
-#popular
-{
+#popular {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     background-color: #f2f2f2;
-    border: 3px solid;
-    border-radius: 15px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1.5em;
     overflow: hidden;
-    max-width: 30%;
-    max-height: 595px;
+    max-width: 20em;
 }
 
-#title_popular
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-#result_block
-{
+
+/* Bloc resultat */
+
+#result_block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-height: 70%;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.block1
-{
+.block1 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 30%;
-    height: 35%;
+    height: 45%;
     background-color: white;
-    border: 3px solid;
-    border-radius: 10px;
-    padding: 3px 3px 3px 3px;
+    border: 5px white solid;
+    border-radius: 1.5em;
+    overflow: hidden;
 }
 
-.image_block1
-{
+.image_block1 {
     display: flex;
     max-height: 60%;
 }
 
-.block2
-{
+.lieu_hebergement {
+    padding: 0.5rem 0rem 0rem 1rem;
+    font-size: 1.1rem;
+}
+
+.prix {
+    padding: 0.5rem 0rem 0rem 1rem;
+    font-size: 0.90rem;
+}
+
+.stars {
     display: flex;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0rem 1rem 1rem;
+}
+
+
+
+/* Bloc Les plus populaires */
+
+#title_popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
-    height: 30%;
-    border: 3px solid;
-    border-radius: 10px;
-    padding: 3px 3px 3px 3px;
+    height: 8rem;
+    border: 5px white solid;
+    border-radius: 1.5em;
+    overflow: hidden;
 }
 
-.image_block2
-{
-    width: 30%;
+.image_block2 {
+    width: 35%;
 }
 
-.text_block2
-{
+.text_block2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    right: 1rem;
+    width: 10em;
 }
 
-#activity
-{
+.lieu_hebergement_2 {
+    font-size: 1.1rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.prix_2 {
+    padding: 0rem 0rem 1rem 0rem;
+    font-size: 0.90rem;
+}
+
+.stars_2 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 0.2rem;
+}
+
+
+
+/* Bloc activite */
+
+#activity {
     display: flex;
     flex-direction: column;
-    max-height: 495px;
+    border: 1px red solid;
+    height: 37rem;
 }
 
-#img_activity
-{
+#img_activity {
     display: flex;
     overflow: hidden;
     max-height: 85%;
 }
 
-.block3_1
-{
+.block3_1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -374,8 +394,7 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.block3_1_1
-{
+.block3_1_1 {
     height: 45%;
     background-color: white;
     border: 3px solid;
@@ -383,8 +402,7 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.block3_1_2
-{
+.block3_1_2 {
     height: 45%;
     background-color: white;
     border: 3px solid;
@@ -392,8 +410,7 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.block3_2
-{
+.block3_2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -404,8 +421,7 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.block3_2_1
-{
+.block3_2_1 {
     height: 40%;
     background-color: white;
     border: 3px solid;
@@ -413,8 +429,7 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.block3_2_2
-{
+.block3_2_2 {
     height: 50%;
     background-color: white;
     border: 3px solid;
@@ -422,8 +437,7 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.block3
-{
+.block3 {
     width: 25%;
     background-color: white;
     border: 3px solid;
@@ -431,14 +445,16 @@ img
     padding: 3px 3px 3px 3px;
 }
 
-.image_block3
-{
+.image_block3 {
     width: 100%;
     height: 90%;
 }
 
-#footer
-{
+
+
+/* pied-de-page */
+
+#footer {
     display: flex;
     justify-content: flex-start;
     border: 3px solid;
@@ -446,8 +462,7 @@ img
     max-height: 205px;
 }
 
-#A_propos
-{
+#A_propos {
     display: flex;
     flex-direction: column;
 }
