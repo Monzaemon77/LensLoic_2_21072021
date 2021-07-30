@@ -161,7 +161,8 @@ main a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 15em;
+    margin: 2rem 0rem 2rem 0rem;
+    height: 20em;
 }
 
 .intro {
@@ -172,6 +173,7 @@ main a:hover {
 
 .search_bar_full {
     display: flex;
+    margin: 2rem 0rem 1rem 0rem;
     width: 28rem;
 }
 
@@ -209,6 +211,7 @@ main a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
     max-width: 60rem;
 }
 
@@ -243,6 +246,7 @@ main a:hover {
 
 .info {
     max-height: 25%;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 
@@ -385,6 +389,7 @@ main a:hover {
 #activity {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0rem 2rem 0rem;
     height: 30rem;
 }
 
