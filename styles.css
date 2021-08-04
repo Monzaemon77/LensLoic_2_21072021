@@ -30,7 +30,7 @@ p {
     margin: 0rem;
 }
 
-ul {
+li {
     list-style: none;
 }
 
@@ -111,40 +111,50 @@ img {
 
 #header {
     display: flex;
-    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.lien_logo {
+    padding: 1rem;
+    width: 70%;
+    height: 3rem;
 }
 
 .logo {
-    display: flex;
-    width: 25%;
+    width: 10rem;
 }
 
-#header ul {
+.menu {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    width: 30%;
+    margin: 0;
 }
 
-#header ul a {
+#header li {
     display: flex;
     justify-content: center;
-    min-width: 30%;
-    padding: 12px;
+    padding: 1rem;
 }
 
-#header ul a:hover {
+#header li:not(.inscription):hover {
     color: #0065FC;
     border-top: 2px solid;
+}
+
+#header li a {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#header li a:hover {
+    color: #0065FC;
 }
 
 .sign_up {
     display: flex;
     justify-content: center;
-    padding: 11px;
-    min-width: 30%;
+    padding: 1rem;
     color: #0065FC;
     font-weight: bold;
 }
@@ -152,6 +162,10 @@ img {
 
 
 /* Section Intro recherche et filtres */
+
+main {
+    padding: 2rem;
+}
 
 main a:hover {
     transform: scale(1.05);
@@ -161,8 +175,7 @@ main a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 2rem 0rem 2rem 0rem;
-    height: 20em;
+    margin: 0rem 0rem 2rem 0rem;
 }
 
 .intro {
@@ -202,7 +215,7 @@ main a:hover {
     font-size: 1.2rem;
     border: none;
     width: 10rem;
-    height: 100%;
+    padding: 1rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -210,6 +223,7 @@ main a:hover {
 #filter {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin: 1rem 0rem 1rem 0rem;
     max-width: 60rem;
@@ -526,3 +540,41 @@ main a:hover {
     justify-content: flex-start;
     width: 29rem;
 }
+
+
+
+/* Media queries */
+
+@media all and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    .sign_up {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .hebergement {
+        width: 50%;
+        font-size: 1.5rem;
+        border-bottom: #f2f2f2 solid;
+    }
+    
+    .menu_activity {
+        width: 50%;
+        font-size: 1.5rem;
+        border-bottom: #f2f2f2 solid;
+    }
+
+    #header li:not(.inscription):hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid;
+    }
