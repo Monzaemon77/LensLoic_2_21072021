@@ -82,6 +82,10 @@ li {
     left: 2rem;
 }
 
+.fa-search {
+    visibility: hidden;
+}
+
 .icon-background2 {
     color: white;
 }
@@ -128,6 +132,7 @@ img {
 .menu {
     display: flex;
     margin: 0;
+    padding: 0;
 }
 
 #header li {
@@ -193,8 +198,8 @@ main a:hover {
 .fa-map-marker-alt {
     background-color: #f2f2f2;
     padding: 1rem;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .search_bar_int  {
@@ -209,6 +214,12 @@ main a:hover {
     font-size: 1.2rem;
 }
 
+.bold_search {
+    font-weight: bold;
+    position: relative;
+    left: 0.5rem;
+}
+
 .button_search {
     background-color: #0065fc;
     color: white;
@@ -216,8 +227,9 @@ main a:hover {
     border: none;
     width: 10rem;
     padding: 1rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 
 #filter {
@@ -552,6 +564,7 @@ main a:hover {
 
     #header {
         flex-direction: column;
+        padding: 0;
     }
 
     .sign_up {
@@ -578,3 +591,49 @@ main a:hover {
         border-top: none;
         border-bottom: 2px solid;
     }
+
+    .intro h1 {
+        width: 85%;
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        width: 85%;
+        font-size: 1.7rem;
+    }
+
+    .search_bar_full {
+        width: 100%;
+    }
+
+    .search_bar_int {
+        width: 95%;
+    }
+
+    .fa-map-marker-alt {
+        background-color: #f2f2f2;
+        padding: 2rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .bold_search {
+        visibility: hidden;
+    }
+
+    .fa-search {
+        visibility: visible;
+        position: relative;
+        bottom: 0.9rem;
+    }
+
+    .button_search {
+        font-size: 1.5rem;
+        width: 7rem;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        position: relative;
+        right: 2rem;
+    }
+}
