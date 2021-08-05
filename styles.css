@@ -271,10 +271,15 @@ main a:hover {
 }
 
 .info {
+    display: flex;
+    align-items: center;
     max-height: 25%;
     margin: 1rem 0rem 1rem 0rem;
 }
 
+.text_info {
+    margin-left: 1rem;
+}
 
 
 /* Section resultat et populaire */
@@ -559,17 +564,22 @@ main a:hover {
 
 @media all and (max-width: 768px) {
     body {
-        padding: 1rem;
+        padding: 0rem;
     }
 
     #header {
         flex-direction: column;
         padding: 0;
+        width: 100%;
+    }
+
+    .inscription {
+        padding: 0rem;
     }
 
     .sign_up {
         position: absolute;
-        top: 1.5rem;
+        top: 1rem;
         right: 1rem;
         font-size: 1.5rem;
     }
@@ -592,22 +602,35 @@ main a:hover {
         border-bottom: 2px solid;
     }
 
+    #header li {
+        padding: 0rem;
+    }
+
+
+
+    main {
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    #search_filter {
+        margin: 1rem;
+    }
+
     .intro h1 {
-        width: 85%;
         font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
 
     .intro p {
-        width: 85%;
         font-size: 1.7rem;
     }
 
     .search_bar_full {
-        width: 100%;
+        width: 110%;
     }
 
     .search_bar_int {
-        width: 95%;
+        width: 50rem;
     }
 
     .fa-map-marker-alt {
@@ -629,11 +652,34 @@ main a:hover {
     }
 
     .button_search {
-        font-size: 1.5rem;
-        width: 7rem;
+        font-size: 1.4rem;
+        width: 8rem;
         padding: 1rem;
         border-radius: 1.5rem;
         position: relative;
+        right: 4.4rem;
+    }
+
+
+    .bold_filter {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .filtre_full {
+        font-size: 1rem;
+        margin: 1rem 0rem 0rem 0rem;
+        position: relative;
         right: 2rem;
+    }
+
+    .info {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .text_info {
+        font-size: 1.5rem;
+        margin-left: 1rem;
     }
 }
