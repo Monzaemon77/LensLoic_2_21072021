@@ -606,7 +606,8 @@ main a:hover {
         padding: 0rem;
     }
 
-
+    
+/* Section search_filter */
 
     main {
         padding: 2rem 0rem 2rem 0rem;
@@ -681,5 +682,136 @@ main a:hover {
     .text_info {
         font-size: 1.5rem;
         margin-left: 1rem;
+    }
+
+
+/*Section result_popular */
+
+    #result_popular {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+
+    #popular {
+        max-width: none;
+    }
+
+    .block2 {
+        margin-bottom: 1rem;
+        height: 12rem;
+    }
+
+    .text_block2 {
+        width: 50%;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        justify-content: flex-start;
+    }
+
+    .lieu_hebergement_2 {
+        font-size: 1.5rem;
+    }
+
+    .prix_2 {
+        font-size: 1.5rem;
+    }
+
+    .stars_2 {
+        position: relative;
+        top: 3rem;
+    }
+
+    #result {
+        background-color: white;
+    }
+
+    #result_block {
+        flex-direction: column;
+    }
+
+    .block1 {
+        width: 99%;
+    }
+
+    .image_block1 {
+        height: 10rem;
+    }
+
+    .lien {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+/* Section Activités */
+
+    #activity {
+        height: auto;
+        margin: 0rem;
+        padding:  0rem 2rem 0rem 2rem;
+    }
+
+    #img_activity {
+        flex-direction: column;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .block3 {
+        max-width: none;
+        width: 100%;
+        height: 15rem;
+    }
+
+    .block3_1 {
+        max-width: none;
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .block3_1_1 {
+        height: 15rem;
+    }
+
+    .block3_1_2 {
+        height: 15rem;
+    }
+
+    .block3_2 {
+        max-width: none;
+    }
+
+    .block3_2_1 {
+        height: 15rem;
+    }
+
+    .block3_2_2 {
+        height: 15rem;
+    }
+
+    .image_block3 {
+        height: 80%;
+    }
+
+
+/* Footer */
+
+    #footer {
+        flex-direction: column;
+    }
+
+    .A_propos {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .Nos_hebergements {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .Assistance {
+        margin-left: 3rem;
+        font-size: 1.5rem;
     }
 }
