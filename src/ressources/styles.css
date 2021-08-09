@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Raleway' ;
-    src: url('src/fonts/Raleway-VariableFont_wght.ttf');
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
 }
 
 * {
@@ -246,6 +246,10 @@ main a:hover {
     font-size: 1rem;
 }
 
+.bold_filter_button {
+    font-weight: bold;
+}
+
 .filtre_full {
     display: flex;
     border-top-right-radius: 25px;
@@ -298,9 +302,10 @@ main a:hover {
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: #f2f2f2;
+    margin-right: 2rem;
     padding: 2em;
     border-radius: 1.5em;
-    max-width: 54em;
+    width: 65%;
 }
 
 #popular {
@@ -312,7 +317,7 @@ main a:hover {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 1.5em;
     overflow: hidden;
-    max-width: 20em;
+    width: 25%;
 }
 
 
@@ -345,18 +350,18 @@ main a:hover {
 
 .lieu_hebergement {
     padding: 0.5rem 0rem 0rem 1rem;
-    font-size: 1.1rem;
 }
 
 .prix {
     padding: 0.5rem 0rem 0rem 1rem;
-    font-size: 0.90rem;
+    font-size: 0.80rem;
 }
 
 .stars {
     display: flex;
     flex-wrap: nowrap;
     padding: 0.5rem 0rem 1rem 1rem;
+    font-size: 0.80rem;
 }
 
 .lien:hover {
@@ -378,7 +383,7 @@ main a:hover {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    height: 8rem;
+    height: 7rem;
     border: 5px white solid;
     border-radius: 1.5em;
     overflow: hidden;
@@ -392,25 +397,23 @@ main a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    right: 1rem;
-    width: 10em;
+    width: 55%;
+    margin: 0.5rem 2rem 0rem 1rem;
 }
 
 .lieu_hebergement_2 {
-    font-size: 1.1rem;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0.3rem 0rem;
 }
 
 .prix_2 {
-    padding: 0rem 0rem 1rem 0rem;
-    font-size: 0.90rem;
+    font-size: 0.80rem;
 }
 
 .stars_2 {
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 0.2rem;
+    font-size: 0.80rem;
 }
 
 
@@ -421,7 +424,7 @@ main a:hover {
     display: flex;
     flex-direction: column;
     margin: 1rem 0rem 2rem 0rem;
-    height: 30rem;
+    height: 35rem;
 }
 
 #activity h2 {
@@ -437,6 +440,8 @@ main a:hover {
 }
 
 .block3 {
+    display: flex;
+    flex-direction: column;
     max-width: 25%;
     margin: 1rem 1rem 1rem 0rem;
     background-color: white;
@@ -469,7 +474,7 @@ main a:hover {
 .block3_1_2 {
     display: flex;
     flex-direction: column;
-    height: 9rem;
+    height: 12rem;
     background-color: white;
     border-radius: 1.5rem;
     border: 1px white groove;
@@ -510,7 +515,7 @@ main a:hover {
 }
 
 .image_block3 {
-    height: 19rem;
+    height: 24rem;
     overflow: hidden;
 }
 
@@ -527,6 +532,7 @@ main a:hover {
     justify-content: flex-start;
     background-color: #f2f2f2;
     height: 12rem;
+    width: 100%;
 }
 
 #footer ul {
@@ -542,6 +548,7 @@ main a:hover {
     flex-direction: column;
     justify-content: flex-start;
     width: 29rem;
+    margin-left: 2rem;
 }
 
 .Nos_hebergements {
@@ -561,6 +568,32 @@ main a:hover {
 
 
 /* Media queries */
+
+@media all and (max-width: 1024px) {
+    #result_popular {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+
+    #popular {
+        width: auto;
+        height: 40rem;
+        margin-bottom: 2rem;
+    }
+
+    .text_block_top {
+        justify-content: flex-start;
+    }
+
+    #result {
+        width: auto;
+        height: 31rem;
+    }
+
+    .lieu_activités {
+        margin-top: 0.5rem;
+    }
+}
 
 @media all and (max-width: 768px) {
     body {
@@ -606,7 +639,7 @@ main a:hover {
         padding: 0rem;
     }
 
-    
+
 /* Section search_filter */
 
     main {
@@ -705,7 +738,7 @@ main a:hover {
         width: 50%;
         margin-right: 2rem;
         font-size: 1.5rem;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .lieu_hebergement_2 {
@@ -716,9 +749,260 @@ main a:hover {
         font-size: 1.5rem;
     }
 
-    .stars_2 {
+    #result {
+        background-color: white;
+        height: auto;
+    }
+
+    #result_block {
+        flex-direction: column;
+    }
+
+    .block1 {
+        width: 99%;
+    }
+
+    .image_block1 {
+        height: 10rem;
+    }
+
+    .lien {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+/* Section Activités */
+
+    #activity {
+        height: auto;
+        margin: 0rem;
+        padding:  0rem 2rem 0rem 2rem;
+    }
+
+    #img_activity {
+        flex-direction: column;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .block3 {
+        max-width: none;
+        width: 100%;
+        height: 15rem;
+    }
+
+    .block3_1 {
+        max-width: none;
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .block3_1_1 {
+        height: 15rem;
+    }
+
+    .block3_1_2 {
+        height: 15rem;
+    }
+
+    .block3_2 {
+        max-width: none;
+    }
+
+    .block3_2_1 {
+        height: 15rem;
+    }
+
+    .block3_2_2 {
+        height: 15rem;
+    }
+
+    .image_block3 {
+        height: 80%;
+    }
+
+
+/* Footer */
+
+    #footer {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .A_propos {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        width: auto;
+    }
+
+    .Nos_hebergements {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .Assistance {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media all and (max-width: 425px) {
+    body {
+        padding: 0rem;
+    }
+
+    #header {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .inscription {
+        padding: 0rem;
+    }
+
+    .sign_up {
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
+        font-size: 1rem;
+    }
+
+    .hebergement {
+        width: 50%;
+        font-size: 1.2rem;
+        border-bottom: #f2f2f2 solid;
+    }
+    
+    .menu_activity {
+        width: 50%;
+        font-size: 1.2rem;
+        border-bottom: #f2f2f2 solid;
+    }
+
+    #header li:not(.inscription):hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid;
+    }
+
+    #header li {
+        padding: 0rem;
+    }
+
+
+/* Section search_filter */
+
+    main {
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    #search_filter {
+        margin: 1rem;
+    }
+
+    .intro h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+    }
+
+    .search_bar_full {
+        width: 110%;
+        height: 4.3rem;
+    }
+
+    .search_bar_int {
+        width: 50rem;
+    }
+
+    .fa-map-marker-alt {
+        background-color: #f2f2f2;
+        padding: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .bold_search {
+        visibility: hidden;
+    }
+
+    .fa-search {
+        visibility: visible;
         position: relative;
-        top: 3rem;
+        bottom: 1.5rem;
+    }
+
+    .button_search {
+        font-size: 1.5rem;
+        width: 8rem;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        position: relative;
+        right: 4.4rem;
+    }
+
+    .bold_filter {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .filtre_full {
+        font-size: 1rem;
+        margin: 1rem 0rem 0rem 0rem;
+        position: relative;
+        right: 2rem;
+    }
+
+    .info {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .text_info {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        position: relative;
+        top: 0.5rem;
+    }
+
+
+/*Section result_popular */
+
+    #result_popular {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+
+    #popular {
+        max-width: none;
+    }
+
+    .block2 {
+        margin-bottom: 1rem;
+        height: 10rem;
+    }
+
+    .text_block2 {
+        width: 50%;
+        margin-right: 2rem;
+        margin-left: 3rem;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+
+    .lieu_hebergement_2 {
+        font-size: 1.2rem;
+    }
+
+    .prix_2 {
+        font-size: 1rem;
     }
 
     #result {
@@ -797,12 +1081,14 @@ main a:hover {
 
     #footer {
         flex-direction: column;
+        height: 100%;
     }
 
     .A_propos {
         margin-left: 3rem;
         margin-top: 2rem;
         font-size: 1.5rem;
+        width: auto;
     }
 
     .Nos_hebergements {
@@ -813,5 +1099,177 @@ main a:hover {
     .Assistance {
         margin-left: 3rem;
         font-size: 1.5rem;
+    }
+}
+
+
+@media all and (max-width: 375px) {
+
+    .logo {
+        width: 7rem;
+    }
+
+    main {
+        padding-top: 1rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .search_bar_full {
+        height: 3.5rem;
+    }
+
+    .fa-map-marker-alt {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .button_search {
+        position: relative;
+        right: 2rem;
+        font-size: 1.2rem;
+        padding-top: 1.2rem;
+        border-radius: 15px;
+    }
+
+    .bold_filter {
+        font-size: 1.3rem;
+    }
+
+    .bold_filter_button {
+        font-size: 1rem;
+    }
+
+    .filtre_full {
+        
+    }
+
+    .button {
+        border-width: 2px;
+    }
+
+    .text_info {
+        font-size: 1rem;
+    }
+
+    #popular {
+        height: 35rem;
+        border-radius: 0rem;
+        margin: 0rem;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    #title_popular {
+        font-size: 1rem;
+    }
+
+    .block2 {
+        height: 8rem;
+    }
+
+    .block2 img {
+        width: 8rem;
+    }
+
+    .text_block2 {
+        margin-right: 0rem;
+    }
+
+    .lieu_hebergement_2 {
+        font-size: 1rem;
+    }
+
+    .prix_2 {
+        font-size: 0.9rem;
+    }
+
+    #result {
+        margin: 0rem;
+        padding: 2rem 1rem 0rem 1rem;
+    }
+
+    #result h2 {
+        font-size: 1.3rem;
+    }
+
+    .lien {
+        font-size: 1.4rem;
+    }
+
+    .block1 {
+        height: 12rem;
+    }
+
+    .block3 {
+        height: 12rem;
+    }
+
+    .block3_1_1 {
+        height: 12rem;
+    }
+
+    .block3_1_2 {
+        height: 12rem;
+    }
+
+    .block3_2 {
+        margin-left: 0rem;
+    }
+
+    .block3_2_1 {
+        height: 12rem;
+    }
+
+    .block3_2_2 {
+        height: 12rem;
+    }
+
+    .lieu_activités {
+        margin-top: 1rem;
+    }
+
+    #footer h3 {
+        font-size: 1.2rem;
+    }
+
+    #footer a {
+        font-size: 1rem;
+    }
+}
+
+
+@media all and (max-width: 320px) {
+    
+    .search_bar_int {
+        width: 20rem;
+    }
+
+    ::placeholder {
+        font-size: 0.7rem;
+    }
+
+    .text_block2 {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .block2 img {
+        width: 6rem;
+    }
+
+    #result {
+        margin: 0rem;
+    }
+
+    .block3_2 {
+        margin-left: 0rem;
     }
 }
