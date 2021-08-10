@@ -126,7 +126,7 @@ img {
 }
 
 .logo {
-    width: 10rem;
+    width: 7rem;
 }
 
 .menu {
@@ -1084,21 +1084,25 @@ main a:hover {
         height: 100%;
     }
 
+    #footer a {
+        font-size: 1rem;
+    }
+
     .A_propos {
         margin-left: 3rem;
         margin-top: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: auto;
     }
 
     .Nos_hebergements {
         margin-left: 3rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .Assistance {
         margin-left: 3rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -1140,6 +1144,10 @@ main a:hover {
         border-radius: 15px;
     }
 
+    #filter {
+        width: 110%;
+    }
+
     .bold_filter {
         font-size: 1.3rem;
     }
@@ -1148,12 +1156,9 @@ main a:hover {
         font-size: 1rem;
     }
 
-    .filtre_full {
-        
-    }
-
     .button {
         border-width: 2px;
+        padding: 0rem 1rem 0rem 2.5rem;
     }
 
     .text_info {
@@ -1234,14 +1239,6 @@ main a:hover {
 
     .lieu_activités {
         margin-top: 1rem;
-    }
-
-    #footer h3 {
-        font-size: 1.2rem;
-    }
-
-    #footer a {
-        font-size: 1rem;
     }
 }
 
