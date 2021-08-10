@@ -338,9 +338,15 @@ main a:hover {
     width: 30%;
     height: 45%;
     background-color: white;
-    border: 5px white solid;
+    padding: 0.2rem;
+    box-shadow: 0rem 0.5rem 0.5rem gainsboro;
     border-radius: 1.5rem;
     overflow: hidden;
+}
+
+.block1 img {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 .image_block1 {
@@ -384,9 +390,15 @@ main a:hover {
     justify-content: space-between;
     background-color: white;
     height: 7rem;
-    border: 5px white solid;
+    padding: 0.2rem;
     border-radius: 1.5em;
+    box-shadow: 0rem 0.5rem 0.5rem gainsboro;
     overflow: hidden;
+}
+
+.block2 img {
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
 .image_block2 {
@@ -446,7 +458,7 @@ main a:hover {
     margin: 1rem 1rem 1rem 0rem;
     background-color: white;
     border-radius: 1.5rem;
-    border: 1px white groove;
+    box-shadow: 0rem 0.1rem 1rem gainsboro;
     overflow: hidden;
 }
 
@@ -465,8 +477,8 @@ main a:hover {
     flex-direction: column;
     height: 12rem;
     background-color: white;
-    border: 1px white groove;
     border-radius: 1.5rem;
+    box-shadow: 0rem 0.1rem 1rem gainsboro;
     margin-bottom: 1rem;
     overflow: hidden;
 }
@@ -477,7 +489,7 @@ main a:hover {
     height: 12rem;
     background-color: white;
     border-radius: 1.5rem;
-    border: 1px white groove;
+    box-shadow: 0rem 0.1rem 1rem gainsboro;
     margin-top: 1rem;
     overflow: hidden;
 }
@@ -498,7 +510,7 @@ main a:hover {
     height: 50%;
     background-color: white;
     border-radius: 1.5rem;
-    border: 1px white groove;
+    box-shadow: 0rem 0.1rem 1rem gainsboro;
     margin-bottom: 1rem;
     overflow: hidden;
 }
@@ -509,7 +521,7 @@ main a:hover {
     height: 50%;
     background-color: white;
     border-radius: 1.5rem;
-    border: 1px white groove;
+    box-shadow: 0rem 0.1rem 1rem gainsboro;
     margin-top: 1rem;
     overflow: hidden;
 }
