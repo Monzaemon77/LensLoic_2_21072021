@@ -764,6 +764,7 @@ main a:hover {
     #result {
         background-color: white;
         height: auto;
+        margin: 0rem;
     }
 
     #result_block {
@@ -772,6 +773,8 @@ main a:hover {
 
     .block1 {
         width: 99%;
+        margin-bottom: 1rem;
+        height: 15rem;
     }
 
     .image_block1 {
