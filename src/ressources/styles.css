@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Raleway' ;
-    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 * {
@@ -24,10 +24,6 @@ h1 {
 
 h3 {
     margin: 2rem 0rem 0rem 0rem;
-}
-
-p {
-    margin: 0rem;
 }
 
 li {
@@ -109,6 +105,13 @@ img {
     font-weight: bold;
 }
 
+main {
+    padding: 2rem;
+}
+
+main a:hover {
+    transform: scale(1.05);
+}
 
 
 /* En-tete */
@@ -167,14 +170,6 @@ img {
 
 
 /* Section Intro recherche et filtres */
-
-main {
-    padding: 2rem;
-}
-
-main a:hover {
-    transform: scale(1.05);
-}
 
 #search_filter {
     display: flex;
